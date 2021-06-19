@@ -85,7 +85,7 @@ body {
 #mainNavigationPopUp #sub2 {
   top: 0;
   right: -205px;
-}
+} 
 
 #mainNavigationPopUp #subMenu1:hover #sub1 {
   display: block;
