@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #fafafa;
+  font-family: sans-serif;
+  line-height: 1.5;
+  position: relative;
+}
+
+#mainNavigationPopUp {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#mainNavigationPopUp h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#mainNavigationPopUp nav {
+  width: 100%;
+}
+
+#mainNavigationPopUp nav ul {
+  list-style-type: none;
+}
+
+#mainNavigationPopUp nav ul li {
+  float: left;
+}
+
+#mainNavigationPopUp nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #000;
+  border-radius: .2rem;
+}
+
+#mainNavigationPopUp nav ul li a:hover {
+  background-color: #ecf0f1;
+}
+
+#mainNavigationPopUp #subMenu1 {
+  position: relative;
+}
+
+#mainNavigationPopUp #sub1, #mainNavigationPopUp #sub2 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -150px;
+  width: 200px;
+  height: auto;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  -webkit-animation: popup .3s ease-in-out;
+          animation: popup .3s ease-in-out;
+}
+
+#mainNavigationPopUp #sub1 li, #mainNavigationPopUp #sub2 li {
+  width: 100%;
+}
+
+#mainNavigationPopUp #sub1 li a, #mainNavigationPopUp #sub2 li a {
+  width: 100%;
+}
+
+#mainNavigationPopUp #subMenu1:hover #sub1 {
+  display: block;
+}
+
+#mainNavigationPopUp #subMenu2:hover #sub2 {
+  display: block;
+}
+
+@-webkit-keyframes popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
