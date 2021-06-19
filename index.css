@@ -56,7 +56,7 @@ body {
   background-color: #ecf0f1;
 }
 
-#mainNavigationPopUp #subMenu1 {
+#mainNavigationPopUp #subMenu1, #mainNavigationPopUp #subMenu2 {
   position: relative;
 }
 
@@ -80,6 +80,11 @@ body {
 
 #mainNavigationPopUp #sub1 li a, #mainNavigationPopUp #sub2 li a {
   width: 100%;
+}
+
+#mainNavigationPopUp #sub2 {
+  top: 0;
+  right: -205px;
 }
 
 #mainNavigationPopUp #subMenu1:hover #sub1 {
